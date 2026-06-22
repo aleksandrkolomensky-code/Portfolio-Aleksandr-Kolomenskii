@@ -1,0 +1,301 @@
+issue_id,issue_key,issue_type,priority,story_points,reporter_id,assignee_id
+1,BP-1001,Epic,Medium,0,28,28
+2,BP-1002,Tech Debt,Medium,5,13,20
+3,BP-1003,Story,High,2,8,27
+4,BP-1004,Tech Debt,Critical,8,13,16
+5,BP-1005,Story,Medium,8,16,6
+6,BP-1006,Epic,Low,0,4,4
+7,BP-1007,Story,Critical,8,3,17
+8,BP-1008,Bug,Critical,0,18,3
+9,BP-1009,Epic,High,0,22,22
+10,BP-1010,Epic,High,0,24,24
+11,BP-1011,Story,Critical,1,24,13
+12,BP-1012,Story,Low,3,27,23
+13,BP-1013,Story,Medium,3,25,10
+14,BP-1014,Epic,High,0,25,25
+15,BP-1015,Epic,Low,0,22,22
+16,BP-1016,Tech Debt,Medium,1,8,29
+17,BP-1017,Epic,Low,0,25,25
+18,BP-1018,Epic,Medium,0,4,4
+19,BP-1019,Bug,Critical,0,17,30
+20,BP-1020,Bug,High,0,23,14
+21,BP-1021,Bug,Critical,0,29,23
+22,BP-1022,Bug,High,0,8,6
+23,BP-1023,Tech Debt,Low,8,18,12
+24,BP-1024,Story,Low,1,23,5
+25,BP-1025,Story,Low,1,28,15
+26,BP-1026,Epic,Medium,0,19,19
+27,BP-1027,Bug,High,0,24,29
+28,BP-1028,Bug,Critical,0,26,18
+29,BP-1029,Story,Low,1,22,18
+30,BP-1030,Tech Debt,Critical,5,15,5
+31,BP-1031,Epic,Low,0,24,24
+32,BP-1032,Tech Debt,Low,2,7,11
+33,BP-1033,Bug,Critical,0,6,13
+34,BP-1034,Bug,High,0,15,27
+35,BP-1035,Epic,Low,0,26,26
+36,BP-1036,Epic,Low,0,7,7
+37,BP-1037,Story,Critical,5,16,11
+38,BP-1038,Bug,High,0,13,3
+39,BP-1039,Bug,Critical,0,10,18
+40,BP-1040,Bug,High,0,10,11
+41,BP-1041,Epic,Low,0,22,22
+42,BP-1042,Epic,Low,0,28,28
+43,BP-1043,Bug,High,0,17,6
+44,BP-1044,Story,Low,8,3,12
+45,BP-1045,Bug,High,0,19,30
+46,BP-1046,Epic,Low,0,24,24
+47,BP-1047,Tech Debt,High,2,22,15
+48,BP-1048,Story,High,5,5,14
+49,BP-1049,Bug,High,0,1,20
+50,BP-1050,Epic,Low,0,26,26
+51,BP-1051,Story,High,2,30,16
+52,BP-1052,Epic,Medium,0,22,22
+53,BP-1053,Tech Debt,Medium,5,27,27
+54,BP-1054,Tech Debt,Low,8,10,8
+55,BP-1055,Story,High,1,29,8
+56,BP-1056,Story,High,3,20,11
+57,BP-1057,Tech Debt,Medium,3,17,21
+58,BP-1058,Tech Debt,Low,1,21,18
+59,BP-1059,Tech Debt,Low,1,11,9
+60,BP-1060,Tech Debt,Medium,5,18,18
+61,BP-1061,Epic,Low,0,2,2
+62,BP-1062,Story,Low,3,19,27
+63,BP-1063,Story,Critical,2,2,14
+64,BP-1064,Tech Debt,Low,3,7,12
+65,BP-1065,Epic,High,0,26,26
+66,BP-1066,Bug,High,0,28,10
+67,BP-1067,Story,Critical,1,6,15
+68,BP-1068,Bug,Critical,0,6,8
+69,BP-1069,Bug,Critical,0,8,11
+70,BP-1070,Bug,Critical,0,27,12
+71,BP-1071,Story,Low,2,13,15
+72,BP-1072,Tech Debt,Low,3,12,23
+73,BP-1073,Bug,High,0,4,13
+74,BP-1074,Story,High,1,4,30
+75,BP-1075,Bug,Critical,0,14,30
+76,BP-1076,Epic,Critical,0,28,28
+77,BP-1077,Story,High,1,23,18
+78,BP-1078,Epic,Medium,0,22,22
+79,BP-1079,Bug,Critical,0,20,15
+80,BP-1080,Epic,High,0,26,26
+81,BP-1081,Tech Debt,Critical,3,13,14
+82,BP-1082,Story,Medium,5,22,17
+83,BP-1083,Story,High,5,18,3
+84,BP-1084,Tech Debt,High,2,14,29
+85,BP-1085,Tech Debt,Critical,5,15,11
+86,BP-1086,Bug,High,0,10,23
+87,BP-1087,Tech Debt,Low,2,22,14
+88,BP-1088,Story,Medium,2,1,5
+89,BP-1089,Story,Critical,8,28,6
+90,BP-1090,Bug,High,0,23,17
+91,BP-1091,Bug,High,0,5,3
+92,BP-1092,Epic,Critical,0,7,7
+93,BP-1093,Story,Critical,1,18,12
+94,BP-1094,Epic,Critical,0,4,4
+95,BP-1095,Bug,Critical,0,20,23
+96,BP-1096,Bug,High,0,24,21
+97,BP-1097,Bug,High,0,27,13
+98,BP-1098,Bug,Critical,0,15,6
+99,BP-1099,Tech Debt,Medium,3,11,15
+100,BP-1100,Epic,Medium,0,4,4
+101,BP-1101,Story,Critical,2,23,11
+102,BP-1102,Epic,Critical,0,24,24
+103,BP-1103,Tech Debt,Critical,5,2,11
+104,BP-1104,Bug,High,0,28,29
+105,BP-1105,Bug,High,0,12,14
+106,BP-1106,Bug,High,0,16,12
+107,BP-1107,Tech Debt,Critical,5,1,17
+108,BP-1108,Tech Debt,Critical,2,27,20
+109,BP-1109,Story,Low,5,19,29
+110,BP-1110,Epic,Low,0,24,24
+111,BP-1111,Story,Critical,2,2,13
+112,BP-1112,Bug,High,0,15,15
+113,BP-1113,Tech Debt,Critical,3,25,18
+114,BP-1114,Tech Debt,Low,5,1,27
+115,BP-1115,Epic,High,0,7,7
+116,BP-1116,Epic,Low,0,1,1
+117,BP-1117,Story,Medium,1,20,9
+118,BP-1118,Story,Medium,5,22,8
+119,BP-1119,Story,Critical,3,25,16
+120,BP-1120,Story,Low,2,10,8
+121,BP-1121,Epic,High,0,28,28
+122,BP-1122,Bug,High,0,3,29
+123,BP-1123,Story,Low,3,28,30
+124,BP-1124,Epic,Low,0,22,22
+125,BP-1125,Bug,High,0,17,15
+126,BP-1126,Epic,Critical,0,25,25
+127,BP-1127,Epic,Critical,0,22,22
+128,BP-1128,Bug,Critical,0,6,23
+129,BP-1129,Tech Debt,Critical,5,14,29
+130,BP-1130,Tech Debt,High,2,27,6
+131,BP-1131,Tech Debt,Critical,2,25,20
+132,BP-1132,Bug,High,0,16,15
+133,BP-1133,Story,Critical,2,12,13
+134,BP-1134,Tech Debt,High,8,23,13
+135,BP-1135,Epic,Medium,0,2,2
+136,BP-1136,Story,Critical,5,18,12
+137,BP-1137,Bug,Critical,0,26,3
+138,BP-1138,Epic,High,0,7,7
+139,BP-1139,Bug,Critical,0,22,29
+140,BP-1140,Tech Debt,Critical,8,17,16
+141,BP-1141,Bug,Critical,0,23,20
+142,BP-1142,Tech Debt,High,3,8,8
+143,BP-1143,Story,High,1,24,27
+144,BP-1144,Story,Medium,2,24,21
+145,BP-1145,Tech Debt,High,1,27,11
+146,BP-1146,Tech Debt,Medium,3,6,14
+147,BP-1147,Epic,Medium,0,19,19
+148,BP-1148,Epic,Low,0,26,26
+149,BP-1149,Tech Debt,Medium,5,4,3
+150,BP-1150,Tech Debt,Critical,5,15,15
+151,BP-1151,Story,Low,3,28,21
+152,BP-1152,Epic,Low,0,24,24
+153,BP-1153,Bug,High,0,5,9
+154,BP-1154,Tech Debt,Low,2,4,27
+155,BP-1155,Bug,Critical,0,15,20
+156,BP-1156,Tech Debt,Critical,3,19,30
+157,BP-1157,Epic,Low,0,7,7
+158,BP-1158,Story,High,1,6,12
+159,BP-1159,Story,Low,2,1,18
+160,BP-1160,Bug,Critical,0,2,12
+161,BP-1161,Tech Debt,High,5,3,12
+162,BP-1162,Tech Debt,Medium,5,4,27
+163,BP-1163,Story,Medium,3,27,9
+164,BP-1164,Epic,Low,0,4,4
+165,BP-1165,Tech Debt,High,5,4,20
+166,BP-1166,Tech Debt,Critical,3,17,27
+167,BP-1167,Bug,High,0,20,5
+168,BP-1168,Bug,Critical,0,1,6
+169,BP-1169,Story,Low,3,19,5
+170,BP-1170,Story,Critical,8,21,20
+171,BP-1171,Tech Debt,Medium,8,14,21
+172,BP-1172,Epic,Critical,0,22,22
+173,BP-1173,Bug,Critical,0,22,8
+174,BP-1174,Story,High,5,23,21
+175,BP-1175,Tech Debt,Critical,8,2,20
+176,BP-1176,Epic,High,0,19,19
+177,BP-1177,Tech Debt,Low,5,28,23
+178,BP-1178,Epic,Critical,0,24,24
+179,BP-1179,Epic,Medium,0,26,26
+180,BP-1180,Tech Debt,Critical,5,25,5
+181,BP-1181,Story,High,8,5,14
+182,BP-1182,Bug,High,0,1,30
+183,BP-1183,Story,Medium,3,18,3
+184,BP-1184,Bug,High,0,27,8
+185,BP-1185,Bug,High,0,16,14
+186,BP-1186,Tech Debt,Critical,5,16,12
+187,BP-1187,Bug,Critical,0,7,30
+188,BP-1188,Story,Low,3,25,18
+189,BP-1189,Tech Debt,High,1,10,14
+190,BP-1190,Bug,Critical,0,18,21
+191,BP-1191,Tech Debt,High,8,25,27
+192,BP-1192,Bug,Critical,0,28,11
+193,BP-1193,Story,Critical,2,28,18
+194,BP-1194,Epic,High,0,25,25
+195,BP-1195,Bug,High,0,16,5
+196,BP-1196,Story,High,1,28,20
+197,BP-1197,Epic,Critical,0,1,1
+198,BP-1198,Story,Critical,2,3,21
+199,BP-1199,Tech Debt,High,8,23,17
+200,BP-1200,Epic,High,0,26,26
+201,BP-1201,Bug,Critical,0,28,27
+202,BP-1202,Epic,Low,0,7,7
+203,BP-1203,Tech Debt,Medium,1,14,8
+204,BP-1204,Epic,Critical,0,4,4
+205,BP-1205,Tech Debt,Low,1,11,5
+206,BP-1206,Tech Debt,High,3,14,9
+207,BP-1207,Story,Critical,8,22,10
+208,BP-1208,Story,Medium,1,20,17
+209,BP-1209,Story,Critical,8,5,12
+210,BP-1210,Bug,Critical,0,9,3
+211,BP-1211,Bug,High,0,3,20
+212,BP-1212,Tech Debt,High,5,23,13
+213,BP-1213,Bug,High,0,13,21
+214,BP-1214,Epic,Medium,0,24,24
+215,BP-1215,Tech Debt,High,3,1,17
+216,BP-1216,Tech Debt,Low,8,28,5
+217,BP-1217,Bug,High,0,20,16
+218,BP-1218,Story,Medium,8,9,9
+219,BP-1219,Epic,Low,0,19,19
+220,BP-1220,Bug,Critical,0,24,9
+221,BP-1221,Epic,High,0,22,22
+222,BP-1222,Bug,High,0,5,27
+223,BP-1223,Tech Debt,High,2,9,21
+224,BP-1224,Tech Debt,High,1,15,6
+225,BP-1225,Story,Medium,5,28,27
+226,BP-1226,Tech Debt,Low,5,1,13
+227,BP-1227,Epic,Critical,0,22,22
+228,BP-1228,Tech Debt,Critical,3,4,12
+229,BP-1229,Bug,Critical,0,30,30
+230,BP-1230,Story,Low,5,30,14
+231,BP-1231,Bug,High,0,2,5
+232,BP-1232,Tech Debt,Critical,1,4,12
+233,BP-1233,Story,Critical,5,12,27
+234,BP-1234,Bug,Critical,0,21,8
+235,BP-1235,Bug,Critical,0,2,16
+236,BP-1236,Story,Critical,5,8,16
+237,BP-1237,Epic,High,0,26,26
+238,BP-1238,Tech Debt,Low,5,9,11
+239,BP-1239,Epic,Critical,0,2,2
+240,BP-1240,Story,Low,1,26,15
+241,BP-1241,Story,Medium,8,7,6
+242,BP-1242,Story,Medium,2,11,9
+243,BP-1243,Epic,High,0,4,4
+244,BP-1244,Story,High,2,4,3
+245,BP-1245,Story,Low,3,26,12
+246,BP-1246,Tech Debt,Low,2,9,5
+247,BP-1247,Story,Critical,8,4,6
+248,BP-1248,Bug,Critical,0,17,29
+249,BP-1249,Epic,Critical,0,26,26
+250,BP-1250,Story,Low,8,10,20
+251,BP-1251,Epic,Low,0,25,25
+252,BP-1252,Bug,High,0,16,20
+253,BP-1253,Epic,Low,0,22,22
+254,BP-1254,Story,Low,2,9,30
+255,BP-1255,Tech Debt,Critical,8,17,14
+256,BP-1256,Bug,High,0,26,8
+257,BP-1257,Story,Critical,5,29,12
+258,BP-1258,Bug,Critical,0,13,18
+259,BP-1259,Epic,High,0,24,24
+260,BP-1260,Tech Debt,High,3,5,21
+261,BP-1261,Epic,Low,0,2,2
+262,BP-1262,Epic,Critical,0,2,2
+263,BP-1263,Tech Debt,Medium,8,2,29
+264,BP-1264,Tech Debt,Low,5,12,18
+265,BP-1265,Epic,High,0,28,28
+266,BP-1266,Tech Debt,High,1,19,23
+267,BP-1267,Story,Medium,5,8,8
+268,BP-1268,Tech Debt,High,1,25,13
+269,BP-1269,Story,Critical,8,25,30
+270,BP-1270,Epic,High,0,1,1
+271,BP-1271,Story,High,3,30,15
+272,BP-1272,Tech Debt,Low,2,28,9
+273,BP-1273,Bug,High,0,24,3
+274,BP-1274,Epic,Medium,0,24,24
+275,BP-1275,Bug,Critical,0,6,16
+276,BP-1276,Tech Debt,High,8,20,6
+277,BP-1277,Epic,Medium,0,4,4
+278,BP-1278,Epic,Low,0,19,19
+279,BP-1279,Bug,Critical,0,20,20
+280,BP-1280,Bug,High,0,25,23
+281,BP-1281,Epic,High,0,24,24
+282,BP-1282,Epic,High,0,28,28
+283,BP-1283,Bug,High,0,8,17
+284,BP-1284,Epic,Low,0,7,7
+285,BP-1285,Tech Debt,Medium,2,25,13
+286,BP-1286,Tech Debt,High,1,1,21
+287,BP-1287,Bug,High,0,13,27
+288,BP-1288,Story,High,1,13,5
+289,BP-1289,Bug,Critical,0,30,6
+290,BP-1290,Tech Debt,Critical,8,13,18
+291,BP-1291,Tech Debt,Low,5,1,15
+292,BP-1292,Story,Critical,3,3,18
+293,BP-1293,Epic,Medium,0,24,24
+294,BP-1294,Bug,Critical,0,28,14
+295,BP-1295,Tech Debt,Medium,3,25,10
+296,BP-1296,Epic,Low,0,26,26
+297,BP-1297,Story,High,3,24,9
+298,BP-1298,Story,Low,2,9,11
+299,BP-1299,Story,Medium,1,6,21
+300,BP-1300,Bug,Critical,0,28,15
