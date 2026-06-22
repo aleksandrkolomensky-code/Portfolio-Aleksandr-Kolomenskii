@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -19,22 +18,30 @@ def load_data():
 
 try:
     df_users, df_issues, df_changelogs = load_data()
-    # Связываем данные
-    df_merged = df_changelogs.merge(df_issues, on='issue_id', how='inner')
-    df_merged = df_merged.merge(df_users, left_on='assignee_id', right_on='user_id', how='inner')
+    
+    # Используем left join, чтобы не терять данные при фильтрации
+    df_merged = df_changelogs.merge(df_issues, on='issue_id', how='left')
+    df_merged = df_merged.merge(df_users, left_on='assignee_id', right_on='user_id', how='left')
+    
+    # Заполняем пропуски дефолтными значениями, если они есть
+    df_merged['squad'] = df_merged['squad'].fillna('Other')
+    df_merged['issue_type'] = df_merged['issue_type'].fillna('Story')
     
     # ИНТЕРФЕЙС: Боковая панель фильтров
     st.sidebar.header("🎯 Фильтры конвейера")
+    
+    squad_options = sorted(list(df_merged['squad'].unique()))
     selected_squad = st.sidebar.multiselect(
         "Выбор Команды (Squad):", 
-        options=df_users['squad'].unique(), 
-        default=df_users['squad'].unique()
+        options=squad_options, 
+        default=squad_options
     )
     
+    type_options = sorted(list(df_merged['issue_type'].unique()))
     selected_type = st.sidebar.multiselect(
         "Тип задачи (Issue Type):", 
-        options=df_issues['issue_type'].unique(), 
-        default=['Story', 'Bug', 'Tech Debt']
+        options=type_options, 
+        default=type_options
     )
     
     # Фильтрация датасета
