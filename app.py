@@ -13,7 +13,7 @@ LANG_PACK = {
         "title": "📊 Платформа анализа инженерной эффективности конвейера",
         "sidebar_filters": "🎯 Фильтры конвейера",
         "filter_lang": "🌐 Выбор языка / Language:",
-        "filter_squad": "Выбор Команны (Squad):",
+        "filter_squad": "Выбор Команды (Squad):",
         "filter_type": "Тип задачи (Issue Type):",
         "tab_kanban": "⏳ Kanban & Flow Efficiency",
         "tab_dora": "🚀 DORA Metrics",
@@ -93,7 +93,7 @@ try:
     type_options = sorted(list(df_merged['issue_type'].unique()))
     selected_type = st.sidebar.multiselect(T["filter_type"], options=type_options, default=type_options)
     
-    df_filtered = df_merged[(df_merged['squad'].isin(selected_squad)) & (df_merged['issue_type'].isin(selected_type))]
+    df_filtered = df_merged[(df_merged['squad'].isin(selected_squad)) & (df_merged['issue_type'].isin(selected_type))].copy()
     
     st.title(T["title"])
     st.markdown("---")
@@ -138,7 +138,7 @@ try:
             st.plotly_chart(fig_squad, use_container_width=True)
 
     # ==========================================
-    # ВКЛАДКА 2: DORA METRICS (ПОЛНАЯ ПАНЕЛЬ)
+    # ВКЛАДКА 2: DORA METRICS (ИСПРАВЛЕННАЯ ШКАЛА)
     # ==========================================
     with tab2:
         df_deployments = df_filtered[df_filtered['to_status'] == 'Done'].copy()
@@ -147,21 +147,18 @@ try:
             df_deployments['date'] = pd.to_datetime(df_deployments['changed_at']).dt.date
             unique_deployment_days = df_deployments['date'].nunique()
             
-            # 1. Рейтинг частоты деплоев
-            if unique_deployment_days > 15: rating_df = "Elite 🌟"
-            elif unique_deployment_days > 10: rating_df = "High 🟢"
-            elif unique_deployment_days > 5: rating_df = "Medium 🟡"
+            if unique_deployment_days > 24: rating_df = "Elite 🌟"
+            elif unique_deployment_days > 18: rating_df = "High 🟢"
+            elif unique_deployment_days > 10: rating_df = "Medium 🟡"
             else: rating_df = "Low 🔴"
             
-            # 2. Расчет Lead Time for Changes (медианное время полного жизненного цикла задачи)
             df_lead_time = df_filtered.groupby('issue_id')['hours_spent'].sum().reset_index()
             lead_time_median = float(df_lead_time['hours_spent'].median())
             
-            if lead_time_median < 120: rating_lt = "Elite 🌟"
-            elif lead_time_median < 240: rating_lt = "High 🟢"
+            if lead_time_median < 100: rating_lt = "Elite 🌟"
+            elif lead_time_median < 200: rating_lt = "High 🟢"
             else: rating_lt = "Medium 🟡"
             
-            # 3. Change Failure Rate
             total_deploys = len(df_deployments)
             failed_deploys = len(df_filtered[(df_filtered['from_status'].isin(['QA In Progress', 'Ready for Release'])) & (df_filtered['hours_spent'] > 40.0)]['issue_id'].unique())
             failed_deploys = min(failed_deploys, total_deploys)
@@ -171,11 +168,10 @@ try:
             elif cfr_value < 30.0: rating_cfr = "High 🟢"
             else: rating_cfr = "Medium/Low 🔴"
             
-            # 4. Time to Restore Service (MTTR) - медиана времени исправления багов
             df_bugs = df_filtered[df_filtered['issue_type'] == 'Bug'].groupby('issue_id')['hours_spent'].sum().reset_index()
             if not df_bugs.empty:
                 mttr_median = float(df_bugs['hours_spent'].median())
-                rating_mttr = "Elite 🌟" if mttr_median < 24 else "High 🟢"
+                rating_mttr = "Elite 🌟" if mttr_median < 36 else "High 🟢"
             else:
                 mttr_median = 0.0
                 rating_mttr = "N/A"
@@ -186,7 +182,6 @@ try:
             mttr_median = 0.0
             rating_df = rating_lt = rating_cfr = rating_mttr = "N/A"
             
-        # Сетка 2х2 для четырех метрик DORA
         row1_col1, row1_col2 = st.columns(2)
         row2_col1, row2_col2 = st.columns(2)
         
@@ -213,6 +208,9 @@ try:
         if not df_deployments.empty:
             st.subheader("📈" + (" Deployment Activity Timeline" if lang == "ENG" else " Динамика релизов по дням"))
             df_timeline = df_deployments.groupby('date').size().reset_index(name='Deployments Count')
+            df_timeline = df_timeline.sort_values(by='date')
+            
+            # Строим график по чистым датам релизов
             fig_line = px.line(df_timeline, x='date', y='Deployments Count', labels={'date': 'Date', 'Deployments Count': 'Releases Count'}, color_discrete_sequence=['#228B22'])
             st.plotly_chart(fig_line, use_container_width=True)
 
